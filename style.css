@@ -244,13 +244,12 @@ h2{
 }
 
 .portfolio{
-    height: 2253px;
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 112px 0px 96px 0px;
+    padding: 112px 30px 96px 30px;
 }
 
 .portfolio__title{
@@ -268,13 +267,11 @@ h2{
 }
 
 .img__fashion{
-    width: 940px;
-    height: 512.048px;
     margin-bottom: 43px;
 }
 
 .text__fashion{
-    width: 276.146px;
+    max-width: 276.146px;
     height: 22.032px;
     color: var(--Black, #070707);
     text-align: center;
@@ -294,15 +291,13 @@ h2{
 }
 
 .reebok__img{
-    width: 940px;
-    height: 524.097px;
     margin-bottom: 43px;
     
 
 }
 
 .reebok__text{
-    width: 202.842px;
+    max-width: 202.842px;
     height: 22.032px;
     color:  #070707;
     text-align: center;
@@ -320,8 +315,6 @@ h2{
 }
 
 .braun__img{
-    width: 940px;
-    height: 524.097px;
     margin-bottom: 43px;
     
     
@@ -334,7 +327,7 @@ h2{
     font-family: Gilroy-Medium;
     font-size: 18px;
     font-style: normal;
-    width: 259.075px;
+    max-width: 259.075px;
     height: 22.032px;
     
 }
@@ -346,7 +339,11 @@ h2{
 }
 
 
-
+.portfolio__photo{
+    max-width: 940px;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -354,7 +351,6 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 622px;
     margin: 114px 0px 123px 0px;
 
 }
@@ -371,7 +367,7 @@ h2{
 }
 
 .contacts__text{
-    width: 275.142px;
+    max-width: 275.142px;
     height: 44.065px;
     color: var(--Black, #070707);
     text-align: center;
@@ -410,7 +406,7 @@ h2{
 }
 
 .contacts__text2{
-    width: 243.009px;
+    max-width: 243.009px;
     height: 34.05px;
     flex-shrink: 0;
     color: #828282;
@@ -472,7 +468,19 @@ h2{
         height: 100%;
     }
 
+    .about__box{
+        padding: 0px 30px 0px 30px;
+    }
+
     
 
 
+}
+
+@media (max-width: 300px) {
+    .social__network {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
